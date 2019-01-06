@@ -26,14 +26,12 @@ namespace CompitiVacanze
             Console.WriteLine(Convert.ToString(b, 2));
             Console.WriteLine(Convert.ToString(c, 2));
 
-            Console.WriteLine("inserisci un numero");
-            int value = Convert.ToInt32(Console.ReadLine());
+            int value = 31;
             int somma = value;
             value = ~value + 1; //NOT
             //value = value + 1;
             somma = somma + value;
-            Console.WriteLine($"il valore negato è {value} e la somma con il numero inserito è {somma}");
-
+            Console.WriteLine($"{value} e {somma}");
             long number = 55555;
             Console.WriteLine(Convert.ToString(number, 2));
             short number1 = (short)number;
