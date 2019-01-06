@@ -11,7 +11,9 @@ namespace CompitiVacanze
         static void Main(string[] args)
         {
             int a = int.MaxValue;
+            // "a" equivale al massimo valore che si può ottenere
             Console.WriteLine(a);
+            // se sommato 1 ad "a" si ottiene il minimo valore che si può ottenere dato che non si può andare oltre un determinato valore
             Console.WriteLine(a + 1);
             int b = -128;
             int c = -b;
