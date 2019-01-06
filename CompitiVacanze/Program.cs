@@ -11,14 +11,21 @@ namespace CompitiVacanze
         static void Main(string[] args)
         {
             int a = int.MaxValue;
+
             // "a" equivale al massimo valore che si può ottenere
             Console.WriteLine(a);
             // se sommato 1 ad "a" si ottiene il minimo valore che si può ottenere dato che non si può andare oltre un determinato valore
-            Console.WriteLine(a + 1);
+            if (a < int.MaxValue)
+            {
+                Console.WriteLine(a + 1);
+            }
+            
+            //si da a "b" il valore di -128 e a "c" la sua negazione. siccessivamente vengono stampati i rispettivi valori binari
             int b = -128;
             int c = -b;
             Console.WriteLine(Convert.ToString(b, 2));
             Console.WriteLine(Convert.ToString(c, 2));
+
             int value = 31;
             int somma = value;
             value = ~value + 1; //NOT
@@ -29,6 +36,8 @@ namespace CompitiVacanze
             Console.WriteLine(Convert.ToString(number, 2));
             short number1 = (short)number;
             Console.WriteLine(number1);
+
+            Console.ReadLine();
         }
     }
 }
